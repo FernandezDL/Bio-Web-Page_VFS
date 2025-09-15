@@ -1,0 +1,10 @@
+.header {
+    height: 100px;
+    background-color: #d17878;
+    text-align: center;
+}
+
+.imgLogo {
+    height: 80px;
+    /* margin-top: 10px; */
+}
