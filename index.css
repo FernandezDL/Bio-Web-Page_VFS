@@ -1,11 +1,24 @@
 header {
     height: 100px;
     background-color: #a0346e;
-    text-align: center;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px 0 20px;
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+header .imgLogo {
+    position: absolute;
+    left: 20px;
+}
+
+header h1 {
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+    text-align: center;
 }
 
 footer{
@@ -28,6 +41,38 @@ body {
     background-color: #f7ddd0;
 }
 
+.layout{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    column-gap: 24px;
+    align-items: start;
+    padding: 24px;             
+    box-sizing: border-box;
+}
+
+.main{ min-width: 0; }
+
+.sidebar{
+    background: #ec5c8d;
+    position: sticky;
+    top: 24px;              
+}
+
+.sideNav{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sideNav a{
+    text-decoration: none;
+    color: white;          
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.sideNav a:hover{ text-decoration: underline; }
+
 h1 {
     color: white;
 }
@@ -36,6 +81,13 @@ h2 {
     color: black;
     font-size: 45px;
     text-align: center;
+}
+
+h3 {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
 }
 
 h6{
@@ -57,11 +109,6 @@ p{
     width: 90px;
 }
 
-.imgMenu {
-    height: 40px;
-    width: 35px;
-}
-
 .imgPhoto {
     height: 350px;
     width: auto;
@@ -70,6 +117,12 @@ p{
 .imgIcon {
     height: 60px;
     width: 60px;
+}
+
+.imgClassmate {
+    height: 120px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .nameSpace{
@@ -137,4 +190,23 @@ p{
     justify-content: center;
     gap: 50px;
     margin-top: 20px;
+}
+
+.classmateCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px 35px 35px 35px;
+
+    border: 4px solid #ec5c8d;
+    border-radius: 30px;
+}
+
+.classmateGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
 }
