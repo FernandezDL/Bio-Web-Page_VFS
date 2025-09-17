@@ -8,11 +8,13 @@
     </head>
 
     <body>
+        <!-- ***** HEADER **** -->
       	<header>
           	<img src="../img/Logo.png" alt="Logo" class="imgLogo">
           	<h1>My classmates</h1>
       	</header>
 
+        <!-- ***** LAYOUT **** -->
 		<div class="layout">
 			<aside class="sidebar"
 				style="
@@ -23,7 +25,7 @@
 					box-sizing:border-box;
 					position:sticky;
 					top:0;">
-				<nav class="sideNav" aria-label="Site">
+				<nav class="sideNav" aria-label="Site"> <!-- Navigation to other pages -->
 					<a href="../index.html">About me</a>
                     <a href="#top">My Classmates</a>
 				</nav>
@@ -31,9 +33,12 @@
 
 			<main class="main">
                 <h3>My Classmates</h3>
+
+                <!-- Grid with classmate cards -->
                 <div class="classmateGrid">
+                    <!-- Each card contains a classmate's name and photo and navigates to their section -->
                     <a class="classmateCard" href="#cris-odonel">
-                        <img src="../img/pg29/cris.jpg" alt="Cris Odonel" class="imgClassmate" >
+                        <img src="../img/pg29/cris.jpg" alt="Cris Odonel" class="imgClassmate" > 
                         <h4>Cris Odonel</h4>
                     </a>
 
@@ -108,14 +113,16 @@
                     </a>
 				</div>
 
+                <!-- Classmate Sections -->
                 <section aria-labelledby="class-sections">
                     <h3 id="class-sections" style="margin-top:24px;">Classmate Sections</h3>
 
+                    <!-- Each section contains the name and a little description about a classmate -->
                     <article id="cris-odonel" class="studentSection"
                         style="padding:16px; margin:16px 0; border:2px solid #a0346e;  border-radius:12px;">
                         <h4 style="margin:0;">Cris Odonel</h4>
 
-                        <br>
+                        <br> <!-- space between name and description -->
                         <p>I am Cris Odonel. Just turned 19 a couple days ago. I really like to read Manwha/Managa and play vidoe games. Most of my experience is in Unity so I am looking forward to the upcoming classses. I hope to try many things while here in Vancouver!</p>
                         <p>I spend my free time playing video games and watching anime or reading manga/manwha</p>
                     </article>
@@ -233,6 +240,7 @@
 			</main>
 		</div>
 
+        <!-- ***** FOOTER **** -->
 		<footer>
 			<h6>© 2025</h6>
 			<h6>Made with ♥ by Diana Fernández</h6>
