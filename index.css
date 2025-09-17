@@ -27,8 +27,15 @@ h1 {
 
 h2 {
     color: black;
-    font-size: 32px;
+    font-size: 45px;
     text-align: center;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
 }
 
 .imgLogo {
@@ -46,8 +53,13 @@ h2 {
     width: auto;
 }
 
+.imgIcon {
+    height: 60px;
+    width: 60px;
+}
+
 .nameSpace{
-    width: 30%;
+    width: 35%;
     
     padding: 5%;
     display: flex;
@@ -60,7 +72,7 @@ h2 {
 }
 
 .photoSpace{
-    width: 40%;
+    width: 45%;
 
     padding-top: 25px;
     padding-bottom: 25px;
@@ -75,12 +87,40 @@ h2 {
 
 .mainContainer {
     display: flex;
+    flex-direction: column;
+
     padding: 50px;
+    gap: 50px;
 }
 
 .firstRow{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 5%;
+}
+
+.secondRow{
+    padding: 20px 35px 35px 35px;
+
+    border: 4px solid #ec5c8d;
+    border-radius: 30px;
+}
+
+.thirdRow{
+    padding: 20px 35px 35px 35px;
+
+    background-color: #ec5c8d;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactIcons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
 }
