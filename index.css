@@ -8,6 +8,13 @@ header {
     padding: 0 20px 0 20px;
 }
 
+footer{
+    height: 60px;
+    background-color: none;
+    text-align: center;
+    gap: 0px;
+}
+
 button {
     background: none;
     border: none;
@@ -29,6 +36,13 @@ h2 {
     color: black;
     font-size: 45px;
     text-align: center;
+}
+
+h6{
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
 }
 
 p{
